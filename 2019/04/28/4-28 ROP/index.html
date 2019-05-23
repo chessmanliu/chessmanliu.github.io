@@ -7,13 +7,17 @@
   
   <title>Hexo</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta property="og:type" content="website">
+  <meta name="description" content="ROP是为了绕过NX出现的栈缓冲区溢出的基础上，利用程序中已有的小片段 (gadgets) 来改变某些寄存器或者变量的值，从而控制程序的执行流程   之所以称之为 ROP，是因为核心在于利用了指令集中的 ret  指令，改变了指令流的执行顺序。 程序存在溢出，我们就可以通过控制返回地址 可以找到满足条件的 gadgets 以及相应 gadgets 的地址。(这个的意思是找到关键的代码溢出段，获取地">
+<meta property="og:type" content="article">
 <meta property="og:title" content="Hexo">
-<meta property="og:url" content="http://yoursite.com/index.html">
+<meta property="og:url" content="http://yoursite.com/2019/04/28/4-28 ROP/index.html">
 <meta property="og:site_name" content="Hexo">
+<meta property="og:description" content="ROP是为了绕过NX出现的栈缓冲区溢出的基础上，利用程序中已有的小片段 (gadgets) 来改变某些寄存器或者变量的值，从而控制程序的执行流程   之所以称之为 ROP，是因为核心在于利用了指令集中的 ret  指令，改变了指令流的执行顺序。 程序存在溢出，我们就可以通过控制返回地址 可以找到满足条件的 gadgets 以及相应 gadgets 的地址。(这个的意思是找到关键的代码溢出段，获取地">
 <meta property="og:locale" content="default">
+<meta property="og:updated_time" content="2019-04-28T13:07:40.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Hexo">
+<meta name="twitter:description" content="ROP是为了绕过NX出现的栈缓冲区溢出的基础上，利用程序中已有的小片段 (gadgets) 来改变某些寄存器或者变量的值，从而控制程序的执行流程   之所以称之为 ROP，是因为核心在于利用了指令集中的 ret  指令，改变了指令流的执行顺序。 程序存在溢出，我们就可以通过控制返回地址 可以找到满足条件的 gadgets 以及相应 gadgets 的地址。(这个的意思是找到关键的代码溢出段，获取地">
   
     <link rel="alternate" href="/atom.xml" title="Hexo" type="application/atom+xml">
   
@@ -60,9 +64,7 @@
   </div>
 </header>
       <div class="outer">
-        <section id="main">
-  
-    <article id="post-4-28 ROP" class="article article-type-post" itemscope itemprop="blogPost">
+        <section id="main"><article id="post-4-28 ROP" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-meta">
     <a href="/2019/04/28/4-28 ROP/" class="article-date">
   <time datetime="2019-04-28T13:07:45.531Z" itemprop="datePublished">2019-04-28</time>
@@ -99,11 +101,9 @@
     </footer>
   </div>
   
-</article>
-
-
+    
   
-
+</article>
 
 </section>
         
